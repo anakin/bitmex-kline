@@ -1,4 +1,4 @@
-package: github.com/qct/bitmex-go
+package: github.com/anakin/bitmex-kline
 import:
 - package: github.com/satori/go.uuid
   version: ~1.1.0

@@ -8,7 +8,7 @@ all structs and APIs are from the bitmex official api connectors, based on that,
 the generated connectors by bitmex have too many mistakes to use, this SDK fix these bugs to ensure bitmex API can get right results.
 
 ## Installation
-`go get github.com/qct/bitmex-go`
+`go get github.com/anakin/bitmex-kline`
 
 ## Examples
 1. Get order book
@@ -96,14 +96,14 @@ auth      = context.WithValue(context.TODO(), swagger.ContextAPIKey, swagger.API
 
 // buy
 orderApi := restful.NewOrderApi(apiClient.OrderApi, auth)
-resp, orderId, err := orderApi.LimitBuy("XBTUSD", 1.0, 13000, "qct_f_f_")
+resp, orderId, err := orderApi.LimitBuy("XBTUSD", 1.0, 13000, "anakin_f_f_")
 if err != nil {
     log.Println("error: ", err)
 }
 log.Printf("response: %s, orderId: %s\n", resp.Status, orderId)
 
 // sell
-resp, orderId, err := orderApi.LimitSell("XBTUSD", 1.0, 20000, "qct_f_f_")
+resp, orderId, err := orderApi.LimitSell("XBTUSD", 1.0, 20000, "anakin_f_f_")
 if err != nil {
     log.Println("error: ", err)
 }
