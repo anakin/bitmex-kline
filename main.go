@@ -36,7 +36,7 @@ var (
 )
 
 func main() {
-	//klineHistory()
+	klineHistory()
 	//customKline()
 }
 
